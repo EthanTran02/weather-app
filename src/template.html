@@ -1,11 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <form novalidate>
+      <label for="location">Location: </label>
+      <input type="text" />
+      <button type="button" id="search">Seach</button>
+      <button type="button" id="toggle">Fahrenheit/Celsius</button>
+    </form>
+
+    <div id="loading" style="display: none">
+      <h1>Loading...</h1>
+    </div>
+
+    <div id="info" style="display: none">
+      <div>
+        <h1 id="location">London, England, United Kingdom</h1>
+        <h2 id="time">23:30:00</h2>
+      </div>
+      <div>
+        <h4 id="temperature">23 Degree</h4>
+        <h4 id="condition">Partial cloudy</h4>
+      </div>
+    </div>
+  </body>
 </html>

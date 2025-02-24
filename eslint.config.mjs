@@ -6,7 +6,7 @@ export default [
     plugins: {},
     rules: {
       'no-unused-vars': 'warn', // Warns about unused variables
-      'no-console': 'warn', // Warns about console.log usage
+      // 'no-console': 'warn', // Warns about console.log usage
       eqeqeq: 'error', // Enforces strict equality (=== instead of ==)
       curly: 'error', // Requires curly braces for if/else
       semi: ['error', 'always'],
