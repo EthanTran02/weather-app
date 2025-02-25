@@ -30,7 +30,6 @@ Desktop.ini
 *.sublime-workspace
 
 # Compiled Python
-*.pyc
 __pycache__/
 *.pyo
 *.pyd
