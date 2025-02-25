@@ -3,7 +3,6 @@ import { updateDOM } from './dom';
 
 const form = document.querySelector('form');
 const input = document.querySelector('input');
-const searchButton = document.getElementById('search');
 const toggleButton = document.getElementById('toggle');
 const loading = document.getElementById('loading');
 const errorSpan = document.getElementById('error');
@@ -17,9 +16,10 @@ const condition = document.getElementById('condition');
 const fahrenheit = document.getElementById('fahrenheit');
 const celsius = document.getElementById('celsius');
 
-const apiKey = '57GV7C6SHUYNDBU83BSHUSEGQ';
+const apiKey = '57GV7C6SHUYNDBU83BSHUSEGQ'; // cspell:ignore
 
-searchButton.addEventListener('click', () => {
+form.addEventListener('submit', event => {
+  event.preventDefault();
   const inputLocation = input.value;
 
   loading.style.display = 'block';
@@ -36,15 +36,7 @@ searchButton.addEventListener('click', () => {
       const data = await response.json();
 
       // update DOM
-      updateDOM(
-        location,
-        time,
-        temperature,
-        condition,
-        infoDiv,
-        data,
-        fahrenheit
-      );
+      updateDOM(location, time, temperature, condition, data, fahrenheit);
 
       loading.style.display = 'none';
       infoDiv.style.display = 'flex';

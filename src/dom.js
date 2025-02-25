@@ -3,7 +3,6 @@ export function updateDOM(
   time,
   temperature,
   condition,
-  infoDiv,
   data,
   fahrenheit
 ) {
@@ -19,5 +18,4 @@ export function updateDOM(
   }
 
   condition.innerText = data.currentConditions.conditions;
-  infoDiv.style.display = 'flex';
 }
