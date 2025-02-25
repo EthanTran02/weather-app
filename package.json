@@ -26,13 +26,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EthanTran02/webpack-temp.git"
+    "url": "git+https://github.com/EthanTran02/weather-app.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/EthanTran02/webpack-temp/issues"
+    "url": "https://github.com/EthanTran02/weather-app/issues"
   },
-  "homepage": "https://github.com/EthanTran02/webpack-temp#readme"
+  "homepage": "https://github.com/EthanTran02/weather-app#readme"
 }
