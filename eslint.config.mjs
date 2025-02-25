@@ -5,6 +5,7 @@ export default [
     files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
     plugins: {},
     rules: {
+      'no-console': 'warn', // Warn on console.log usage
       'no-unused-vars': 'warn', // Warns about unused variables
       // 'no-console': 'warn', // Warns about console.log usage
       eqeqeq: 'error', // Enforces strict equality (=== instead of ==)

@@ -92,7 +92,17 @@ form > label:first-child {
 }
 
 #toggle {
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.2);
+}
+
+form > span {
+  position: absolute;
+  top: 75px;
+  left: 492px;
+  color: rgb(255, 57, 57);
+
+  font-weight: lighter;
+  font-size: 14px;
 }
 
 /* Info Div */
