@@ -2,7 +2,7 @@ import './style.css';
 import { updateDOM } from './dom';
 
 const form = document.querySelector('form');
-const input = document.querySelector('input');
+const input = document.querySelector('#location-input');
 const toggleButton = document.getElementById('toggle');
 const loading = document.getElementById('loading');
 const errorSpan = document.getElementById('error');
