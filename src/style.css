@@ -58,7 +58,7 @@ form label {
   font-weight: 600;
 }
 
-input[type='text'] {
+#location-input {
   width: 100%;
   border: 2px solid #dfe6e9;
   font-size: 1.1rem;
@@ -68,7 +68,7 @@ input[type='text'] {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-input[type='text']:focus {
+#location-input:focus {
   outline: none;
   border-color: #4a90e2;
   box-shadow: 0 0 0 4px rgba(74, 144, 226, 0.1);
@@ -244,4 +244,3 @@ button {
     padding: 0.75rem 1.5rem;
   }
 }
-
