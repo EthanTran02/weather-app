@@ -12,6 +12,8 @@ const location = document.getElementById('location');
 const time = document.getElementById('time');
 const temperature = document.getElementById('temperature');
 const condition = document.getElementById('condition');
+const humidity = document.getElementById('humidity');
+const wind = document.getElementById('wind');
 
 const fahrenheit = document.getElementById('fahrenheit');
 const celsius = document.getElementById('celsius');
@@ -36,7 +38,7 @@ form.addEventListener('submit', event => {
       const data = await response.json();
 
       // update DOM
-      updateDOM(location, time, temperature, condition, data, fahrenheit);
+      updateDOM(location, time, temperature, condition,humidity,wind, data, fahrenheit);
 
       loading.style.display = 'none';
       infoDiv.style.display = 'flex';

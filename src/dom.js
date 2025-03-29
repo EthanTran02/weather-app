@@ -3,6 +3,8 @@ export function updateDOM(
   time,
   temperature,
   condition,
+  humidity,
+  wind,
   data,
   fahrenheit
 ) {
@@ -18,4 +20,6 @@ export function updateDOM(
   }
 
   condition.innerText = data.currentConditions.conditions;
+  humidity.innerText = data.currentConditions.humidity;
+  wind.innerText = data.currentConditions.windspeed;
 }
